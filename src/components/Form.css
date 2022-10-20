@@ -1,0 +1,29 @@
+/** @format */
+
+.formu {
+  text-align: center;
+  margin-top: 20vh;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  outline: none;
+}
+/* if the input is invalid and there is no placeholder shown */
+input:invalid:not(:placeholder-shown) {
+  border: 2px solid red;
+}
+/* if the input is valid and there is no placeholder shown */
+input:valid:not(:placeholder-shown) {
+  border: 2px solid green;
+}
+.submit {
+  border: 20x solid black;
+  cursor: pointer;
+}
